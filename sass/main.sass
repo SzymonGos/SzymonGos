@@ -138,7 +138,7 @@ p
 
     .about-experience
         font-size: 1.5em
-        margin-bottom: 3em
+        margin-bottom: 1em
 
     .container
         @include about-skills
@@ -215,22 +215,32 @@ p
         opacity: 0.8
 
 .social-wrapper
-    background-color: $background-snow    
+    margin-bottom: 10em
+    padding-bottom: 2em 
+    background-color: $background-snow  
+    
 
 .social-title
     font-size: 1.5em
-    padding-bottom: 2em
+    margin-bottom: 1em
+
 
 .social-links
+    padding-left: 3em
+    list-style: none
+
+.link-wrapper
+    margin-bottom: 2em
     display: flex
-    flex-direction: column
-    width: 50%
-    align-items: center
+    &:last-of-type
+        margin: 0
+    
+
+.mdash
+    margin-right: 1em
 
 .link-item
-    margin-bottom: 2em
     letter-spacing: 1px
-    overflow: hidden
     @include link-hover
 
         
