@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+@import 'variables' 
+@import 'mixins'
+
+*
+    box-sizing: border-box
+    padding: 0
+    margin: 0
+
+html
+    font-family: 'Montserrat', sans-serif
+    
+body
+    font-size: 16px
+    color: $main-black
+    font-weight: 400
+    ::selection
+        background-color: #ff4500
+        color: white
+    
+h1, h2, h3, h4
+    margin: 0
+    padding: .5em 0
+    font-weight: 400
+
+p 
+    font-weight: 400
+    padding: .5em 0
+    
+.header
+    position: fixed
+    width: auto
+    padding: 1.5em 1.1em
+   
+    
+
+.home-link
+    font-family: 'Butler Stencil', sans-serif
+    font-weight: 300
+    font-size: 1.8em
+    letter-spacing: 1px
+    text-decoration: none
+    color: $main-black
+    &:hover
+        opacity: 0.6 !important
+
+.intro
+    padding: 0 .8em
+
+    .container
+        text-align: center
+
+        .intro-wrapper
+            padding-top: 10em
+            padding-bottom: 6em
+
+            .name-text
+                font-size: 1.25em
+                line-height: 2em
+
+            .heading-title
+                font-size: 1.6em
+                
+.work
+    min-height: 100vh
+    margin: 1em .8em 10em
+
+    .work-img-1
+        background: url(../components/projects-img/project1.jpg) center no-repeat
+        @include work-img-wrapper
+        
+    .work-img-2
+        background: url(../components/projects-img/project2.jpg) center no-repeat
+        @include work-img-wrapper
+        
+    .work-img-3
+        background: url(../components/projects-img/project3.jpg) center no-repeat
+        @include work-img-wrapper  
+        
+    .work-img-4
+        background: url(../components/projects-img/project4.jpg) center no-repeat
+        @include work-img-wrapper  
+        
+    .work-description
+        @include work-description-wrapper
+
+        .work-title
+            @include work-title
+     
+        .work-type
+            @include work-type
+
+.typewriter-text
+    overflow: hidden
+    display: inline-block
+    animation: typing 1s steps(8, end), blink 1.5s step-end infinite
+    white-space: nowrap
+    letter-spacing: .2em
+    border-right: 3px solid $main-black
+    margin-bottom: 3em
+                   
+    h2 
+        padding: 0
+            
+    @keyframes typing 
+        from 
+            width: 0px 
+                
+        to  
+            width: 40%
+
+    @keyframes blink 
+        from, to 
+        0%
+            border-color: transparent 
+                
+        50% 
+            border-color: $main-black
+                
+
+.about
+    min-height: 100vh
+    margin: 2em .8em 10em
+
+    .about-skillset
+        background-color: $background-snow    
+
+    .about-text
+        margin: 1em 0 6em
+    
+    .about-title
+        @include subtitle
+        
+    .about-paragraph
+        line-height: 1.6em
+        opacity: 0.8
+        text-align: center
+
+    .about-experience
+        font-size: 1.5em
+        margin-bottom: 3em
+
+    .container
+        @include about-skills
+        
+        .skill-title
+            @include about-skills-title
+           
+        .skill-list
+            @include about-skills-list
+
+            .skill-item
+                @include skill-list-item
+
+
+.contact
+    margin: 1em .8em
+    
+    .contact-title
+        @include subtitle
+
+    .contact-paragraph
+        line-height: 1.7em
+        opacity: 0.8
+        margin-bottom: 6em
+        text-align: center
+        
+
+        
+.contact-form
+    display: flex
+    flex-direction: column
+    margin: 1.5em 0 6em
+        
+.form-item
+    display: flex
+    flex-direction: column
+    margin-bottom: 2.5em
+    .form-label
+        margin-bottom: 1em
+        letter-spacing: 1px
+        font-size: 1.1em
+            
+    .form-input
+        font-family: 'Montserrat'
+        padding: 1em 0 .7em .4em
+        font-size: 1em
+        outline: none
+        border: none
+        border-bottom: 1px solid #dddddd
+
+    .form-textarea
+            resize: none
+            overflow: auto
+            line-height: 1.7em
+            height: 3.1em
+            transition: all 1s
+            &:focus
+                height: 15em
+
+.submit-btn
+    font-size: .75em
+    padding: 1.2em 0
+    cursor: pointer
+    border: none
+    background-color: #000000
+    color: #ffffff
+    font-weight: 300
+    text-transform: uppercase
+    letter-spacing: 2px
+    text-decoration: none
+    outline: none
+    transition: background-color 0.5s ease, opacity 0.5s ease-in-out, color 0.5s ease
+    &:hover
+        opacity: 0.8
+
+.social-wrapper
+    background-color: $background-snow    
+
+.social-title
+    font-size: 1.5em
+    padding-bottom: 2em
+
+.social-links
+    display: flex
+    flex-direction: column
+    width: 50%
+    align-items: center
+
+.link-item
+    margin-bottom: 2em
+    letter-spacing: 1px
+    overflow: hidden
+    @include link-hover
+
+        

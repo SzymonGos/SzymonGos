@@ -1,0 +1,58 @@
+@mixin work-img-wrapper
+    display: block
+    height: 450px
+    width: 100%
+    background-size: cover
+
+@mixin work-description-wrapper
+    margin: 1.5em 0 3em
+    width: 100%
+    text-align: center
+
+@mixin work-title
+    font-size: 1.1em
+    margin-bottom: .7em
+    
+@mixin work-type
+    font-size: .9em
+    opacity: 0.8
+
+@mixin about-skills
+    font-size: 1.1em
+    margin-bottom: 2em
+    
+@mixin about-skills-title
+    padding: 0 1em
+    border-left: 3px solid $main-black
+
+@mixin about-skills-list
+    margin-top: 1em
+    padding: 0 3em
+    list-style: none
+   
+@mixin skill-list-item
+    font-size: .8em
+    line-height: 3em
+    
+@mixin subtitle
+    margin-bottom: 1em
+    font-size: 1.5em
+    text-align: center
+@mixin link-hover
+    color: $main-black
+    text-decoration: none
+    font-family: 'Butler', sans-serif
+    &:hover
+        opacity: 0.8
+    &::after
+        bottom: 0
+        content: ""
+        display: block
+        height: 1px
+        background: #000000
+        transition: width 0.3s ease 0s, left 0.3s ease 0s
+        width: 0
+    &:hover:after
+        width: 100%
+        left: 0
+
