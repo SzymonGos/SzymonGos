@@ -30,7 +30,10 @@ p
 .header
     position: fixed
     width: auto
-    padding: 1.5em 1.1em
+    margin: 1.5em 1.1em
+    
+    @include tablet
+        margin-left: 1.8em 
    
     
 
@@ -45,10 +48,16 @@ p
         opacity: 0.6 !important
 
 .intro
-    padding: 0 .8em
+    margin: 0 .8em
+    
+    @include tablet
+        margin: 1.8em
 
     .container
         text-align: center
+        
+        @include tablet
+            text-align: left
 
         .intro-wrapper
             padding-top: 10em
@@ -59,11 +68,18 @@ p
                 line-height: 2em
 
             .heading-title
-                font-size: 1.6em
+                font-size: 1.6em 
+
+                @include tablet
+                    font-size: 2.5em
                 
 .work
     min-height: 100vh
     margin: 1em .8em 10em
+
+    @include tablet
+        margin-left: 1.8em
+        margin-right: 1.8em
 
     .work-img-1
         background: url(../components/projects-img/project1.jpg) center no-repeat
@@ -121,8 +137,18 @@ p
 .about
     margin: 2em .8em 10em
 
+    @include tablet
+    margin-left: 1.8em
+    margin-right: 1.8em
+
     .about-skillset
-        background-color: $background-snow    
+        background-color: $background-snow   
+
+        @include tablet
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-around
+
 
     .about-text
         margin-bottom: 6em
@@ -139,6 +165,9 @@ p
         font-size: 1.5em
         margin-bottom: 1em
 
+        @include tablet
+            flex-basis: 100%
+
     .container
         @include about-skills
         
@@ -154,6 +183,10 @@ p
 
 .contact
     margin: 1em .8em
+
+    @include tablet
+    margin-left: 1.8em
+    margin-right: 1.8em
     
     .contact-title
         @include subtitle
@@ -163,18 +196,30 @@ p
         opacity: 0.8
         margin-bottom: 6em
         text-align: center
-        
-
-        
+                
 .contact-form
     display: flex
     flex-direction: column
     margin: 1.5em 0 8em
+    
+    @include tablet
+        padding: 0 2em
+        flex-direction: row
+        flex-wrap: wrap
+        justify-content: space-between
         
 .form-item
     display: flex
     flex-direction: column
     margin-bottom: 2.5em
+    
+    @include tablet
+        flex-basis: 45%
+        &:last-of-type
+            flex-basis: 100%
+            margin-top: 2em
+           
+
     .form-label
         margin-bottom: 1em
         letter-spacing: 1px
@@ -215,6 +260,10 @@ p
         opacity: 0.8
         background-color: #ffffff
         color: $main-black
+    
+    @include tablet
+        padding-left: 3em
+        padding-right: 3em
 
 .social-wrapper
     margin-bottom: 5em
@@ -225,17 +274,26 @@ p
 .social-title
     font-size: 1.5em
     margin-bottom: 1em
-
+    
+    @include tablet
+        margin-bottom: 2em
 
 .social-links
     padding-left: 3em
     list-style: none
+
+    @include tablet
+        display: flex
+        justify-content: center
 
 .link-wrapper
     margin-bottom: 2em
     display: flex
     &:last-of-type
         margin: 0
+    
+    @include tablet
+        flex-basis: 40%
     
 .mdash
     margin-right: 1em
