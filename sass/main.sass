@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap');
 @import 'variables' 
 @import 'mixins'
 
@@ -27,16 +27,12 @@ p
     font-weight: 400
     padding: .5em 0
     
+
 .header
     position: fixed
     width: auto
     margin: 1.5em 1.1em
-    
-    @include tablet
-        margin-left: 1.8em 
    
-    
-
 .home-link
     font-family: 'Butler Stencil', sans-serif
     font-weight: 300
@@ -49,45 +45,42 @@ p
 
 .intro
     margin: 0 .8em
-    
-    @include tablet
-        margin: 1.8em
 
     .container
         text-align: center
         
-        @include tablet
-            text-align: left
+    .intro-wrapper
+        padding-top: 10em
+        padding-bottom: 6em
 
-        .intro-wrapper
-            padding-top: 10em
-            padding-bottom: 6em
+    .name-text
+        font-size: 1.25em
+        line-height: 2em
 
-            .name-text
-                font-size: 1.25em
-                line-height: 2em
-
-            .heading-title
-                font-size: 1.6em 
-
-                @include tablet
-                    font-size: 2.5em
+    .heading-title
+        font-size: 1.6em 
                 
 .work
     min-height: 100vh
     margin: 1em .8em 10em
 
-    @include tablet
-        margin-left: 1.8em
-        margin-right: 1.8em
+    @include desktop
+            .grid
+                display: grid
+                grid-template-columns: 1fr 1fr
+                column-gap: 1em
 
+    .work-item 
+        margin-bottom: 1em
+           
     .work-img-1
         background: url(../components/projects-img/project1.jpg) center no-repeat
         @include work-img-wrapper
-        
+
     .work-img-2
         background: url(../components/projects-img/project2.jpg) center no-repeat
         @include work-img-wrapper
+          
         
     .work-img-3
         background: url(../components/projects-img/project3.jpg) center no-repeat
@@ -99,6 +92,8 @@ p
         
     .work-description
         @include work-description-wrapper
+        @include desktop
+            display: none
 
         .work-title
             @include work-title
@@ -115,9 +110,6 @@ p
     border-right: 3px solid $main-black
     margin-bottom: 5em
      
-    @include tablet
-        font-size: 1.1em
-                   
     h2 
         padding: 0
             
@@ -140,18 +132,8 @@ p
 .about
     margin: 2em .8em 10em
 
-    @include tablet
-    margin-left: 1.8em
-    margin-right: 1.8em
-
     .about-skillset
         background-color: $background-snow   
-
-        @include tablet
-            display: flex
-            flex-wrap: wrap
-            justify-content: space-around
-
 
     .about-text
         margin-bottom: 6em
@@ -168,9 +150,6 @@ p
         font-size: 1.5em
         margin-bottom: 1em
 
-        @include tablet
-            flex-basis: 100%
-
     .container
         @include about-skills
         
@@ -186,10 +165,6 @@ p
 
 .contact
     margin: 1em .8em
-
-    @include tablet
-    margin-left: 1.8em
-    margin-right: 1.8em
     
     .contact-title
         @include subtitle
@@ -204,25 +179,12 @@ p
     display: flex
     flex-direction: column
     margin: 1.5em 0 8em
-    
-    @include tablet
-        padding: 0 2em
-        flex-direction: row
-        flex-wrap: wrap
-        justify-content: space-between
         
 .form-item
     display: flex
     flex-direction: column
     margin-bottom: 2.5em
-    
-    @include tablet
-        flex-basis: 45%
-        &:last-of-type
-            flex-basis: 100%
-            margin-top: 2em
-           
-
+              
     .form-label
         margin-bottom: 1em
         letter-spacing: 1px
@@ -263,10 +225,6 @@ p
         opacity: 0.8
         background-color: #ffffff
         color: $main-black
-    
-    @include tablet
-        padding-left: 3em
-        padding-right: 3em
 
 .social-wrapper
     margin-bottom: 5em
@@ -277,26 +235,16 @@ p
 .social-title
     font-size: 1.5em
     margin-bottom: 1em
-    
-    @include tablet
-        margin-bottom: 2em
 
 .social-links
     padding-left: 3em
     list-style: none
-
-    @include tablet
-        display: flex
-        justify-content: center
 
 .link-wrapper
     margin-bottom: 2em
     display: flex
     &:last-of-type
         margin: 0
-    
-    @include tablet
-        flex-basis: 40%
     
 .mdash
     margin-right: 1em
@@ -305,7 +253,6 @@ p
     letter-spacing: 1px
     font-size: 1.1em
     @include link-hover
-
         
 .footer
     font-family: 'Butler', sans-serif
@@ -314,3 +261,67 @@ p
     margin: 1em 0
     text-align: center
     opacity: 0.8
+
+
+
+@include tablet
+    .typewriter-text
+        font-size: 1.1em
+
+    .header
+        margin-left: 1.8em 
+
+    .intro
+        margin: 1.8em
+
+        .container
+            text-align: left
+            
+            .heading-title
+                font-size: 2.5em
+
+    .work
+        margin-left: 1.8em
+        margin-right: 1.8em
+
+    .about
+        margin-left: 1.8em
+        margin-right: 1.8em
+
+    .about-skillset
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-around
+
+    .about-experience
+        flex-basis: 100%
+
+    .contact
+        margin-left: 1.8em
+        margin-right: 1.8em
+    
+    .contact-form
+        padding: 0 2em
+        flex-direction: row
+        flex-wrap: wrap
+        justify-content: space-between
+
+    .form-item
+        flex-basis: 45%
+        &:last-of-type
+            flex-basis: 100%
+            margin-top: 2em
+
+    .submit-btn
+        padding-left: 3em
+        padding-right: 3em
+
+    .social-title
+        margin-bottom: 2em
+
+    .social-links
+        display: flex
+        justify-content: center
+
+    .link-wrapper
+        flex-basis: 40%
