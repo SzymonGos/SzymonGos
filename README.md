@@ -3,6 +3,6 @@
 My personal pertfolio. 
 
 I  used:
-*HTML
-*CSS
-*JavScript
+* HTML
+* CSS
+* JavScript
