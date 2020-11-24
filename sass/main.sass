@@ -18,7 +18,7 @@ body
         background-color: #ff4500
         color: white
     
-h1, h2, h3, h4
+h1, h2, h3,
     margin: 0
     padding: .5em 0
     font-weight: 400
@@ -50,8 +50,7 @@ p
     text-align: center
         
 .intro-wrapper
-    padding-top: 10em
-    padding-bottom: 6em
+    padding: 10em 0
 
 .name-text
     font-size: 1.25em
@@ -65,7 +64,7 @@ p
     margin: 1em .8em 10em
 
 .work-item 
-    margin-bottom: 1em
+    margin-bottom: 10em
            
 .work-img-1
     background: url(../components/projects-img/project1.jpg) center no-repeat
@@ -133,9 +132,7 @@ p
         @include subtitle
         
     .about-paragraph
-        line-height: 1.6em
-        opacity: 0.8
-        text-align: center
+        @include paragraph
 
     .about-experience
         font-size: 1.5em
@@ -161,10 +158,9 @@ p
         @include subtitle
 
     .contact-paragraph
-        line-height: 1.7em
-        opacity: 0.8
         margin-bottom: 6em
-        text-align: center
+        @include paragraph
+
                 
 .contact-form
     display: flex
@@ -326,10 +322,6 @@ p
     .work-item 
         grid-column: span 2
         
-
-    .work-description
-        display: none
-
     .intro-wrapper
         max-width: 1000px
         margin: 0 auto
@@ -341,9 +333,6 @@ p
     .about-skillset
         max-width: 1000px
         margin: 0 auto
-
-    .work-item
-        margin-bottom: 0
 
     .contact-form
         max-width: 900px

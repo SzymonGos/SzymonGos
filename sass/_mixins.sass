@@ -17,18 +17,23 @@
     background-size: cover
 
 @mixin work-description-wrapper
-    margin: 1.5em 0 3em
-    width: 100%
-    text-align: center
+    margin: 1em 0
+    text-align: left
+    line-height: 1.7em
 
 @mixin work-title
     font-size: 1.1em
-    margin-bottom: .7em
     
 @mixin work-type
     font-size: .9em
     opacity: 0.8
 
+@mixin paragraph
+    line-height: 1.7em
+    opacity: 0.6
+    font-size: 1.5em
+    text-align: center
+    
 @mixin about-skills
     font-size: 1.1em
     margin-bottom: 2em
@@ -48,8 +53,9 @@
     
 @mixin subtitle
     margin-bottom: 1em
-    font-size: 1.5em
+    font-size: 1.25em
     text-align: center
+
 @mixin link-hover
     color: $main-black
     text-decoration: none
