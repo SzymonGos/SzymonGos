@@ -65,23 +65,12 @@ p
 
 .work-item 
     margin-bottom: 10em
-           
-.work-img-1
-    background: url(../components/projects-img/project1.jpg) center no-repeat
-    @include work-img-wrapper
+    text-decoration: none
+    color: $main-black
 
-.work-img-2
-    background: url(../components/projects-img/project2.jpg) center no-repeat
+.work-img
     @include work-img-wrapper
-              
-.work-img-3
-    background: url(../components/projects-img/project3.jpg) center no-repeat
-    @include work-img-wrapper  
-        
-.work-img-4
-    background: url(../components/projects-img/project4.jpg) center no-repeat
-    @include work-img-wrapper  
-        
+                
 .work-description
     @include work-description-wrapper
 
@@ -325,7 +314,7 @@ p
     .intro-wrapper
         max-width: 1000px
         margin: 0 auto
-        
+    
     .about-text
         max-width: 1000px
         margin: 0 auto
@@ -338,4 +327,9 @@ p
         max-width: 900px
         margin: 0 auto 5em
         
-        
+@include large-desktop
+    .work-img
+        filter: brightness(0%)
+        transition: filter .4s ease 
+        &:hover
+            filter: brightness(100%)
