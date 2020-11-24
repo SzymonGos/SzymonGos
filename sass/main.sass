@@ -46,60 +46,51 @@ p
 .intro
     margin: 0 .8em
 
-    .container
-        text-align: center
+.container
+    text-align: center
         
-    .intro-wrapper
-        padding-top: 10em
-        padding-bottom: 6em
+.intro-wrapper
+    padding-top: 10em
+    padding-bottom: 6em
 
-    .name-text
-        font-size: 1.25em
-        line-height: 2em
+.name-text
+    font-size: 1.25em
+    line-height: 2em
 
-    .heading-title
-        font-size: 1.6em 
+.heading-title
+    font-size: 1.6em 
                 
 .work
     min-height: 100vh
     margin: 1em .8em 10em
 
-    @include desktop
-            .grid
-                display: grid
-                grid-template-columns: 1fr 1fr
-                column-gap: 1em
-
-    .work-item 
-        margin-bottom: 1em
+.work-item 
+    margin-bottom: 1em
            
-    .work-img-1
-        background: url(../components/projects-img/project1.jpg) center no-repeat
-        @include work-img-wrapper
+.work-img-1
+    background: url(../components/projects-img/project1.jpg) center no-repeat
+    @include work-img-wrapper
 
-    .work-img-2
-        background: url(../components/projects-img/project2.jpg) center no-repeat
-        @include work-img-wrapper
-          
+.work-img-2
+    background: url(../components/projects-img/project2.jpg) center no-repeat
+    @include work-img-wrapper
+              
+.work-img-3
+    background: url(../components/projects-img/project3.jpg) center no-repeat
+    @include work-img-wrapper  
         
-    .work-img-3
-        background: url(../components/projects-img/project3.jpg) center no-repeat
-        @include work-img-wrapper  
+.work-img-4
+    background: url(../components/projects-img/project4.jpg) center no-repeat
+    @include work-img-wrapper  
         
-    .work-img-4
-        background: url(../components/projects-img/project4.jpg) center no-repeat
-        @include work-img-wrapper  
-        
-    .work-description
-        @include work-description-wrapper
-        @include desktop
-            display: none
+.work-description
+    @include work-description-wrapper
 
-        .work-title
-            @include work-title
+.work-title
+    @include work-title
      
-        .work-type
-            @include work-type
+.work-type
+    @include work-type
 
 .typewriter-text
     overflow: hidden
@@ -132,8 +123,8 @@ p
 .about
     margin: 2em .8em 10em
 
-    .about-skillset
-        background-color: $background-snow   
+    .skillset-wrapper
+        background-color: $background-snow
 
     .about-text
         margin-bottom: 6em
@@ -262,8 +253,6 @@ p
     text-align: center
     opacity: 0.8
 
-
-
 @include tablet
     .typewriter-text
         font-size: 1.1em
@@ -274,11 +263,11 @@ p
     .intro
         margin: 1.8em
 
-        .container
-            text-align: left
+    .container
+        text-align: left
             
-            .heading-title
-                font-size: 2.5em
+    .heading-title
+        font-size: 2.5em
 
     .work
         margin-left: 1.8em
@@ -325,3 +314,39 @@ p
 
     .link-wrapper
         flex-basis: 40%
+
+
+@include desktop
+    .grid
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
+        column-gap: 1em
+        row-gap: 1em
+
+    .work-item 
+        grid-column: span 2
+        
+
+    .work-description
+        display: none
+
+    .intro-wrapper
+        max-width: 1000px
+        margin: 0 auto
+        
+    .about-text
+        max-width: 1000px
+        margin: 0 auto
+    
+    .about-skillset
+        max-width: 1000px
+        margin: 0 auto
+
+    .work-item
+        margin-bottom: 0
+
+    .contact-form
+        max-width: 900px
+        margin: 0 auto 5em
+        
+        
