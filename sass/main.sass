@@ -9,7 +9,7 @@
 
 html
     font-family: 'Montserrat', sans-serif
-    
+
 body
     font-size: 16px
     color: $main-black
@@ -32,7 +32,7 @@ p
     position: fixed
     width: auto
     margin: 1.5em 1.1em
-   
+
 .home-link
     font-family: 'Butler Stencil', sans-serif
     font-weight: 300
@@ -57,8 +57,9 @@ p
     line-height: 2em
 
 .heading-title
-    font-size: 2em 
+    font-size: 3em 
     line-height: 1.2em
+
 .work
     min-height: 100vh
     margin: 1em .8em 10em
@@ -66,11 +67,10 @@ p
 .work-item 
     margin-bottom: 10em
     text-decoration: none
-    color: $main-black
 
 .work-img
     @include work-img-wrapper
-                
+
 .work-description
     @include work-description-wrapper
 
@@ -83,9 +83,6 @@ p
 .about
     margin: 2em .8em 10em
 
-    .skillset-wrapper
-        background-color: $background-snow
-
     .about-text
         margin-bottom: 6em
     
@@ -94,10 +91,6 @@ p
         
     .about-paragraph
         @include paragraph
-
-    .about-experience
-        font-size: 1.5em
-        margin-bottom: 1em
 
     .container
         @include about-skills
@@ -114,12 +107,14 @@ p
 
 .contact
     margin: 1em .8em
+
+    .contact-layout
+        margin-bottom: 10em
     
     .contact-title
         @include subtitle
 
     .contact-paragraph
-        margin-bottom: 6em
         @include paragraph
 
                 
@@ -131,7 +126,7 @@ p
 .form-item
     display: flex
     flex-direction: column
-    margin-bottom: 2.5em
+    margin-bottom: 5em
               
     .form-label
         margin-bottom: 1em
@@ -146,15 +141,16 @@ p
         border: none
         border-bottom: 1px solid #dddddd
 
-    .form-textarea
-            resize: none
-            overflow: auto
-            line-height: 1.7em
-            letter-spacing: 1px
-            height: 3.2em
-            transition: all 1s
-            &:focus
-                height: 15em
+.form-textarea
+    resize: none
+    overflow: auto
+    line-height: 1.7em
+    letter-spacing: 1px
+    height: 3.2em
+    transition: all 1s
+    &:focus
+        height: 15em
+
 
 .submit-btn
     font-size: .75em
@@ -225,7 +221,7 @@ p
         text-align: left
             
     .heading-title
-        font-size: 2.5em
+        font-size: 3.5em
 
     .work
         margin-left: 1.8em
@@ -259,6 +255,9 @@ p
             flex-basis: 100%
             margin-top: 2em
 
+    .form-textarea:focus
+        height: 20em
+
     .submit-btn
         padding-left: 3em
         padding-right: 3em
@@ -277,31 +276,52 @@ p
 @include desktop
     .grid
         display: grid
-        grid-template-columns: repeat(4, 1fr)
+        grid-template-columns: 1fr repeat(4, 15.6em) 1fr
         column-gap: 1em
         row-gap: 1em
+            
+    .name-text
+        grid-row: 1
+        grid-column: 2/3
 
     .heading-title
-        font-size: 3.5em
+        font-size: 4em
+        grid-row: 2
+        grid-column: 2/6
 
     .work-item 
-        grid-column: span 2
-        
-    .intro-wrapper
-        max-width: 1000px
-        margin: 0 auto
+        grid-column: span 3
+
+    .about-title
+        grid-row: 1
+        grid-column: 1/-1
     
-    .about-text
-        max-width: 1000px
-        margin: 0 auto
+    .about-paragraph
+        grid-row: 2
+        grid-column: 2/6
+        &:last-of-type
+            grid-row: 3
+            
+    .contact-title
+        grid-row: 1
+        grid-column: 1/-1
     
-    .about-skillset
-        max-width: 1000px
-        margin: 0 auto
+    .contact-paragraph
+        grid-row: 2
+        grid-column: 2/6
 
     .contact-form
         max-width: 900px
         margin: 0 auto 5em
+
+    .social-title
+        text-align: center
+        grid-row: 1
+        grid-column: 2/3
+
+    .social-links
+        grid-row: 2
+        grid-column: 3/5
     
 @include large-desktop
     .work-img
@@ -309,5 +329,9 @@ p
         transition: filter .4s ease 
         &:hover
             filter: brightness(100%)
+
+
+
+        
 
    
