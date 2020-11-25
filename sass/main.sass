@@ -57,8 +57,8 @@ p
     line-height: 2em
 
 .heading-title
-    font-size: 1.6em 
-                
+    font-size: 2em 
+    line-height: 1.2em
 .work
     min-height: 100vh
     margin: 1em .8em 10em
@@ -156,11 +156,12 @@ p
             &:focus
                 height: 15em
 
-.submit-btn, #submit
+.submit-btn
     font-size: .75em
     padding: 1.2em 0
     cursor: pointer
     border: none
+    user-select: none
     background-color: #000000
     color: #ffffff
     font-weight: 300
@@ -280,6 +281,9 @@ p
         column-gap: 1em
         row-gap: 1em
 
+    .heading-title
+        font-size: 3.5em
+
     .work-item 
         grid-column: span 2
         
@@ -298,10 +302,12 @@ p
     .contact-form
         max-width: 900px
         margin: 0 auto 5em
-        
+    
 @include large-desktop
     .work-img
         filter: brightness(0%)
         transition: filter .4s ease 
         &:hover
             filter: brightness(100%)
+
+   
