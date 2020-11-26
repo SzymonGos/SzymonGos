@@ -69,9 +69,6 @@ p
     margin-bottom: 10em
     text-decoration: none
 
-.work-img
-    @include work-img-wrapper
-
 .work-description
     @include work-description-wrapper
 
@@ -80,6 +77,9 @@ p
      
 .work-type
     @include work-type
+
+.work-img
+    @include work-img-wrapper
 
 .about
     margin: 2em .8em 10em
@@ -92,19 +92,6 @@ p
         
     .about-paragraph
         @include paragraph
-
-    .container
-        @include about-skills
-        
-        .skill-title
-            @include about-skills-title
-           
-        .skill-list
-            @include about-skills-list
-
-            .skill-item
-                @include skill-list-item
-
 
 .contact
     margin: 1em .8em
@@ -333,7 +320,7 @@ p
         transition: filter .4s ease 
         &:hover
             filter: brightness(100%)
-            
+
     .grid
          grid-template-columns: 1fr repeat(4, 15.6em) 1fr
     
