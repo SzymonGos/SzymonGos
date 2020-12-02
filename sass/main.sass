@@ -61,6 +61,34 @@ p
     min-height: 100vh
     margin: 1em .8em 10em
 
+.typewriter
+    overflow: hidden
+    display: inline-block
+    font-size: 1.2em
+    animation: typing 2s steps(35, end), blink .9s step-end infinite
+    white-space: nowrap
+    letter-spacing: .2em
+    border-right: 3px solid $main-black
+    margin-bottom: 5em
+    animation-delay: 1.5s
+
+    @keyframes typing 
+        from 
+            width: 0px 
+
+        to  
+            width: 218px
+
+    @keyframes blink 
+        from, to 
+        0%
+            border-color: transparent 
+
+        50% 
+            border-color: $main-black  
+            
+
+
 .work-item 
     margin-bottom: 10em
     text-decoration: none
@@ -215,6 +243,9 @@ p
         margin-left: 1.8em
         margin-right: 1.8em
 
+    .typewriter
+        font-size: 1.3em
+
     .about
         margin-left: 1.8em
         margin-right: 1.8em
@@ -271,6 +302,16 @@ p
         grid-template-columns: 1fr repeat(4, 10em) 1fr
         column-gap: 1em
         row-gap: 1em
+
+    .typewriter
+        font-size: 1.5em
+        margin-bottom: 7em
+        @keyframes typing 
+            from 
+                width: 0px 
+            to  
+                width: 272px
+
 
     .container
         max-width: 1000px
