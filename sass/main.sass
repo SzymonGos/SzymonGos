@@ -61,21 +61,30 @@ p
     min-height: 100vh
     margin: 1em .8em 10em
 
+.typewriter-wrapper
+    visibility: hidden
+    animation: showIn 0s 3s forwards
+
+    @keyframes showIn
+        to 
+            visibility: visible
+            
+
 .typewriter
     overflow: hidden
     display: inline-block
     font-size: 1.2em
-    animation: typing 2s steps(35, end), blink .9s step-end infinite
+    animation:  typing 2.5s steps(35, end), blink 1s step-end infinite
     white-space: nowrap
     letter-spacing: .2em
     border-right: 3px solid $main-black
     margin-bottom: 5em
-    animation-delay: 1.5s
+    animation-delay: 3s           
 
     @keyframes typing 
-        from 
-            width: 0px 
-
+        from
+            width: 0px
+    
         to  
             width: 218px
 
@@ -305,13 +314,12 @@ p
 
     .typewriter
         font-size: 1.5em
-        margin-bottom: 7em
+        margin-bottom: 5em
         @keyframes typing 
             from 
                 width: 0px 
             to  
                 width: 272px
-
 
     .container
         max-width: 1000px
@@ -320,7 +328,7 @@ p
         grid-template-columns: repeat(auto-fill, minmax(350px, 1fr))
 
     .work-item
-        margin-bottom: 5em
+        margin-bottom: 3.5em
 
     .work-img
         filter: brightness(0%)
@@ -330,7 +338,7 @@ p
             filter: brightness(100%)
 
     .intro-wrapper
-        padding: 15em 0
+        padding: 13em 0
 
     .name-text
         grid-row: 1
@@ -379,13 +387,11 @@ p
          grid-template-columns: 1fr repeat(4, 15.6em) 1fr
 
     .container
-        max-width: 1200px
+        max-width: 1300px
         column-gap: 1em
-        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr))
+        grid-template-columns: repeat(auto-fill, minmax(500px, 1fr))
 
     .contact-form
         max-width: 900px
             
-   
-
    
