@@ -1,9 +1,6 @@
-// document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-//     anchor.addEventListener('click', function (e) {
-//         e.preventDefault();
+const $backToTop = $('.home-link');
 
-//         document.querySelector(this.getAttribute('href')).scrollIntoView({
-//             behavior: 'smooth'
-//         });
-//     });
-// });
+$backToTop.on("click", () => {
+    $("html, body").animate({ scrollTop: 0 }, 1200);
+    return false;
+  });
