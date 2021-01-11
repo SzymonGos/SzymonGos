@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/Butler-Font/butler-font.css">
     <link rel="stylesheet" href="./css/main.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
 </head>
 
 <body>
@@ -109,14 +110,15 @@
                 send inquiry.
             </div>
         </div>
-        <form class="contact-form">
+        <form class="contact-form" id="contact-form">
+            <input type="hidden" name="contact_number">
             <div class="form-item">
                 <label for="name" class="form-label">Name</label>
-                <input class="form-input" type="text" name="name" id="name" placeholder="Your name">
+                <input class="form-input" type="text" name="user_name" id="name" placeholder="Your name">
             </div>
             <div class="form-item">
                 <label for="email" class="form-label">Email Address</label>
-                <input class="form-input" type="text" name="email" id="email" placeholder="Your email address">
+                <input class="form-input" type="text" name="user_email" id="email" placeholder="Your email address">
             </div>
             <div class="form-item">
                 <label for="message" class="form-label">Message</label>
