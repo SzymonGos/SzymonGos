@@ -8,7 +8,13 @@
     <link rel="stylesheet" href="./css/Butler-Font/butler-font.css">
     <link rel="stylesheet" href="./css/main.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+    (function() {
+    emailjs.init("user_2OzPAobt76PS4Xj4ToMWm");
+    })();
+    </script>
+    <script  src="./javascript/sendEmail.js"></script>
 </head>
 
 <body>
@@ -110,10 +116,11 @@
                 send inquiry.
             </div>
         </div>
+
         <form class="contact-form" id="contact-form">
             <div class="form-item">
                 <label for="name" class="form-label">Name</label>
-                <input class="form-input" type="text" name="user_name" id="name" placeholder="Your name" required>
+                <input class="form-input" type="text" name="user_name" id="guestName" placeholder="Your name" required>
             </div>
 
             <div class="form-item">
@@ -129,6 +136,7 @@
 
             <button class="submit-btn" type="submit" id="submit">submit</button>
         </form>
+
         <div class="social-wrapper grid">
             <div class="social-title">
                 <h3>Find me on</h3>
