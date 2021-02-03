@@ -68,7 +68,7 @@ p
 
 .work
     min-height: 100vh
-    margin: 1em .8em 10em
+    margin: 1em .8em 5em
 
 .typewriter-wrapper
     visibility: hidden
@@ -105,8 +105,6 @@ p
         50% 
             border-color: $main-black  
             
-
-
 .work-item 
     margin-bottom: 10em
     text-decoration: none
@@ -146,16 +144,12 @@ p
 
 .contact-paragraph
     @include paragraph
-
-                
+            
 .contact-form
     display: flex
     flex-direction: column
     margin: 1.5em 0 8em
         
-.kw-alert, .kw-alert-error, kw-success
-    display: none
-    
 .form-item
     display: flex
     flex-direction: column
@@ -184,7 +178,6 @@ p
     &:focus
         height: 15em
 
-
 .submit-btn
     font-size: .75em
     padding: 1.2em 0
@@ -209,7 +202,6 @@ p
     padding-bottom: 2em 
     background-color: $background-snow  
     
-
 .social-title
     font-size: 1.5em
     margin-bottom: 1em
@@ -344,12 +336,11 @@ p
         grid-template-columns: repeat(auto-fill, minmax(350px, 1fr))
 
     .work-item
-        margin-bottom: 3.5em
+        margin-bottom: 5em
 
     .work-img
         filter: brightness(0%)
         transition: filter .4s ease 
-        //height: 400px
         &:hover
             filter: brightness(100%)
 
