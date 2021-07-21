@@ -1,8 +1,3 @@
 # portfolio
 
-My personal pertfolio. 
-
-I  used:
-* HTML
-* CSS
-* JavScript
+My personal pertfolio built with core technlogies: HTML, CSS / Sass / JavaScript / JQuery.
