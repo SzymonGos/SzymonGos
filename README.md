@@ -1,3 +1,3 @@
-# portfolio
+# Portfolio
 
-My personal pertfolio built with core technlogies: HTML, CSS / Sass / JavaScript / JQuery.
+My personal portfolio built with core technologies: HTML, CSS / Sass / JavaScript / JQuery.
