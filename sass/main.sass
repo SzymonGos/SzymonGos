@@ -19,7 +19,7 @@ body
         background-color: #ff4500
         color: white
     
-h1, h2, h3
+h1, h2, h3, h4
     margin: 0
     padding: .5em 0
     font-weight: 400
@@ -32,7 +32,7 @@ p
 .header
     position: fixed
     width: auto
-    margin: 1.5em 1.1em
+    margin: .5rem 0rem
     z-index: 999
     transition: transform .5s
     transform: translateX(-120%)
@@ -64,7 +64,7 @@ p
         opacity: 0.6 !important
 
 .intro-wrapper
-    padding: 10em 0
+    padding: 6em 0
     text-align: center
     animation: fadein 2s
 
@@ -213,25 +213,22 @@ p
         background-color: #ffffff
         color: $main-black
 
-.social-wrapper
-    margin-bottom: 10em
-    padding-bottom: 2em 
-    background-color: $background-snow  
-    
-.social-title
-    font-size: 1.5em
-    margin-bottom: 1em
+.social
+    padding-bottom: 6rem 
 
-.social-links
-    padding-left: 3em
-    list-style: none
+    &__links
+        display: flex
+        justify-content: center
+        
+    &__link-item
+        font-size: 20rem
+        color: $main-black
+        text-decoration: none
+        transition: cubic-bezier(.15,.49,.51,.96) 0.4s
 
-.link-wrapper
-    margin-bottom: 2em
-    display: flex
-    &:last-of-type
-        margin: 0
-    
+        &:hover
+            transform: translateY(-15px)
+             
 .mdash
     margin-right: 1em
 
@@ -257,7 +254,8 @@ p
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr))
 
     .header
-        margin-left: 1.8em 
+        width: 200px
+        text-align: right
 
     .intro
         margin: 1.8em
@@ -278,14 +276,6 @@ p
     .about
         margin-left: 1.8em
         margin-right: 1.8em
-
-    .about-skillset
-        display: flex
-        flex-wrap: wrap
-        justify-content: space-around
-
-    .about-experience
-        flex-basis: 100%
 
     .contact
         margin-left: 1.8em
@@ -313,16 +303,12 @@ p
         padding-left: 3em
         padding-right: 3em
 
-    .social-title
-        margin-bottom: 2em
-
-    .social-links
-        display: flex
-        justify-content: center
-
     .link-wrapper
         flex-basis: 40%
 
+    .social
+        display: flex
+        justify-content: space-evenly
 
 @include desktop
 
@@ -353,12 +339,6 @@ p
 
     .work-item
         margin-bottom: 5em
-
-    .work-img
-        filter: brightness(0%)
-        transition: filter .4s ease 
-        &:hover
-            filter: brightness(100%)
 
     .intro-wrapper
         padding: 13em 0
@@ -399,9 +379,9 @@ p
         grid-row: 1
         grid-column: 2/3
 
-    .social-links
-        grid-row: 2
-        grid-column: 3/5
+    .social
+        max-width: 1200px
+        margin: 0 auto
    
     
 @include large-desktop
