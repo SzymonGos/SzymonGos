@@ -8,7 +8,7 @@
 
 <p align="center">
   :hammer: I’m currently working on [Team Finder - client-side](https://github.com/SzymonGos/teamFinder_client_side) </p>
-  :books: I’m currently learning **Next.js TypeSCript** </p>
+  :books: I’m currently learning **Next.js TypeSCript**
 </p>
 
 <br />
