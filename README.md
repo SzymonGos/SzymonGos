@@ -9,11 +9,12 @@
 :hammer: I’m currently working on [Team Finder - client-side](https://github.com/SzymonGos/teamFinder_client_side) </p>
 :books: I’m currently learning **Next.js TypeSCript** </p>
 
+<br />
 
 <p align="center">
     <img src="https://img.shields.io/badge/-languages-000000?style=flat-square&logo=Plex&logoColor=white">
     <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E">
-    <img src="https://img.shields.io/badge/-languages-000000?style=flat-square&logo=Plex&logoColor=white">
+    <img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB">
     <img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white">
     <img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB">
     <img src="https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white">
