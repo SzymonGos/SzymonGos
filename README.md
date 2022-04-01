@@ -7,8 +7,12 @@
 </p>
 
 <p align="center">  
--  🔨 I’m currently working on [Team Finder - client-side](https://github.com/SzymonGos/teamFinder_client_side)
-- 📚 I’m currently learning **Next.js TypeSCript** 
+<span>
+  -  🔨 I’m currently working on [Team Finder - client-side](https://github.com/SzymonGos/teamFinder_client_side)
+  </span>
+<span>
+  - 📚 I’m currently learning **Next.js TypeSCript** 
+  </span>
 </p>
 
 
