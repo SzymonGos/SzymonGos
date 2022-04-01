@@ -1,10 +1,13 @@
-<h3 align="center"> Hi there, I'm Szymon ~ <img src="https://user-images.githubusercontent.com/1303154/88677602-1635ba80-d120-11ea-84d8-d263ba5fc3c0.gif" width="24px" alt="hi">
-</h3>
+<h1 align="center"> Hi there, I'm Szymon ~ <img src="https://user-images.githubusercontent.com/1303154/88677602-1635ba80-d120-11ea-84d8-d263ba5fc3c0.gif" width="24px" alt="hi">
+</h1>
 
 <p align="center">
   <a href="https://szymongos.github.io/SzymonGos">Website</a> •
   <a href="https://www.linkedin.com/in/szymon-gos777">LinkedIn</a>
 </p>
+<br />
+<br />
+<br />
 
 <p align="center">  
   🔨 I’m currently working on <a href='https://github.com/SzymonGos/teamFinder_client_side'>Team Finder - client-side</a>
@@ -12,6 +15,10 @@
 <p align="center">  
   📚 I’m currently learning **Next.js TypeSCript** 
 </p>
+
+<br />
+<br />
+<br />
 
 
 <p align="center">
@@ -22,6 +29,10 @@
     <img src="https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white">
 </p>
 
+
+<br />
+<br />
+<br />
   
   
 <p align="center">
