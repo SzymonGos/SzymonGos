@@ -2,10 +2,14 @@
 </h1>
 
 <p align="center">
+I am a frontend developer solving problems using a technology stack like React, Next.js and more.
+</p>
+
+<p align="center">
   <a href="https://szymongos.github.io/SzymonGos">Website</a> •
   <a href="https://www.linkedin.com/in/szymon-gos777">LinkedIn</a>
 </p>
-<br />
+
 <br />
 <br />
 
@@ -13,10 +17,9 @@
   🔨 I’m currently working on <a href='https://github.com/SzymonGos/teamFinder_client_side'>Team Finder - client-side</a>
 </p>
 <p align="center">  
-  📚 I’m currently learning **Next.js TypeSCript** 
+  📚 I’m learning 👉 **Next.js TypeSCript** 
 </p>
 
-<br />
 <br />
 <br />
 
@@ -29,11 +32,6 @@
     <img src="https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white">
 </p>
 
-
-<br />
-<br />
-<br />
-  
   
 <p align="center">
   <img src="https://img.shields.io/badge/-tools-000000?style=flat-square&logo=Plex&logoColor=white">
