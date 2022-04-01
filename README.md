@@ -6,15 +6,11 @@
   <a href="https://www.linkedin.com/in/szymon-gos777">LinkedIn</a>
 </p>
 
-<p align="center">
-  
-  🔨 I’m currently working on [Team Finder - client-side](https://github.com/SzymonGos/teamFinder_client_side)
-
- 📚 I’m currently learning **Next.js TypeSCript**
-  
+<p align="center">  
+-  🔨 I’m currently working on [Team Finder - client-side](https://github.com/SzymonGos/teamFinder_client_side)
+- 📚 I’m currently learning **Next.js TypeSCript** 
 </p>
 
-<br />
 
 <p align="center">
     <img src="https://img.shields.io/badge/-languages-000000?style=flat-square&logo=Plex&logoColor=white">
