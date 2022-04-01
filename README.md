@@ -6,8 +6,10 @@
   <a href="https://www.linkedin.com/in/szymon-gos777">LinkedIn</a>
 </p>
 
-:hammer: I’m currently working on [Team Finder - client-side](https://github.com/SzymonGos/teamFinder_client_side) </p>
-:books: I’m currently learning **Next.js TypeSCript** </p>
+<p align="center">
+  :hammer: I’m currently working on [Team Finder - client-side](https://github.com/SzymonGos/teamFinder_client_side) </p>
+  :books: I’m currently learning **Next.js TypeSCript** </p>
+</p>
 
 <br />
 
