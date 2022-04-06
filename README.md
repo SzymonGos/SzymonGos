@@ -17,7 +17,7 @@ I am a frontend developer solving problems using a technology stack like React, 
   🔨 I’m currently working on <a href='https://github.com/SzymonGos/teamFinder_client_side'>Team Finder - client-side</a>
 </p>
 <p align="center">  
-  📚 I’m learning 👉 **Next.js TypeSCript** 
+  📚 I’m learning 👉 **Next.js TypeScript** 
 </p>
 
 <br />
