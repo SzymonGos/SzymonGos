@@ -14,7 +14,7 @@ I am a frontend developer solving problems using a technology stack like React, 
 <br />
 
 <p align="center">  
-  🔨 I’m currently working on <a href='https://github.com/SzymonGos/portfolio_2.0'>Portfolio_2.0</a>
+  🔨 I’m currently working at t2.world.
 </p>
 <p align="center">  
   📚 I’m learning 👉 **Next.js** 
