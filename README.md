@@ -6,7 +6,6 @@ I am a frontend developer solving problems using a technology stack like React, 
 </p>
 
 <p align="center">
-  <a href="https://szymongos.github.io/SzymonGos">Website</a> •
   <a href="https://www.linkedin.com/in/szymon-gos777">LinkedIn</a>
 </p>
 
