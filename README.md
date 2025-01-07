@@ -11,10 +11,9 @@ I am a frontend developer solving problems using a technology stack like React, 
 
 <br />
 <br />
-
-<p align="center">  
+<!-- <p align="center">  
   🔨 I’m currently working at t2.world.
-</p>
+</p> -->
 <!-- <p align="center">  
   📚 I’m learning 👉 **Node.js** 
 </p> -->
