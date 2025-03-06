@@ -2,7 +2,7 @@
 </h1>
 
 <p align="center">
-I am a frontend developer solving problems using a technology stack like React, Next.js and more.
+I am a fullstack developer solving problems using a technology stack like React, Next.js and more.
 </p>
 
 <p align="center">
@@ -14,10 +14,6 @@ I am a frontend developer solving problems using a technology stack like React, 
 <!-- <p align="center">  
   🔨 I’m currently working at t2.world.
 </p> -->
-<!-- <p align="center">  
-  📚 I’m learning 👉 **Node.js** 
-</p> -->
-
 <br />
 <br />
 
@@ -33,7 +29,6 @@ I am a frontend developer solving problems using a technology stack like React, 
   
 <p align="center">
   <img src="https://img.shields.io/badge/-tools-000000?style=flat-square&logo=Plex&logoColor=white">
-  <img src="https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase">
   <img src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white">
   <img src="https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white">
   <img src="https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white">
