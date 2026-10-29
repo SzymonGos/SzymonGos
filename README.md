@@ -1,7 +1,7 @@
 
 **Full-Stack Developer** · React · Next.js · TypeScript · Java · Spring Boot
 
-[portfolio](https://szymongos.github.io/) · [linkedin](https://www.linkedin.com/in/szymongos777)
+[portfolio](https://szymongos.github.io/) · [linkedin](https://www.linkedin.com/in/szymon-gos777/)
 
 Frontend-focused developer with commercial experience building and maintaining web applications. Currently expanding into backend development with Java and Spring Boot.
 
