@@ -1,35 +1,25 @@
-<h1 align="center"> Hi there, I'm Szymon ~ <img src="https://user-images.githubusercontent.com/1303154/88677602-1635ba80-d120-11ea-84d8-d263ba5fc3c0.gif" width="24px" height="24px" alt="hi">
-</h1>
 
-<p align="center">
-I am a fullstack developer solving problems using a technology stack like React, Next.js and more.
-</p>
+**Full-Stack Developer** · React · Next.js · TypeScript · Java · Spring Boot
 
-<p align="center">
-  <a href="https://www.linkedin.com/in/szymon-gos777">LinkedIn</a>
-</p>
+[portfolio](https://szymongos.github.io/) · [linkedin](https://www.linkedin.com/in/szymongos777)
 
-<br />
-<br />
-<!-- <p align="center">  
-  🔨 I’m currently working at t2.world.
-</p> -->
-<br />
-<br />
+Frontend-focused developer with commercial experience building and maintaining web applications. Currently expanding into backend development with Java and Spring Boot.
 
+## Projects
 
-<p align="center">
-    <img src="https://img.shields.io/badge/-languages-000000?style=flat-square&logo=Plex&logoColor=white">
-    <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E">
-    <img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB">
-    <img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white">
-    <img src="https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white">
-</p>
+### [RouteTripper](https://routetripper.com/)
 
-  
-<p align="center">
-  <img src="https://img.shields.io/badge/-tools-000000?style=flat-square&logo=Plex&logoColor=white">
-  <img src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white">
-  <img src="https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white">
-  <img src="https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white">
-</p>
+Motorcycle trip planner featuring Google Maps routes, trip management and image uploads.
+Spring Boot REST API with JWT authentication, Flyway migrations and Linux cloud deployment.
+
+`Next.js` · `TypeScript` · `Java 21` · `Spring Boot` · `PostgreSQL` · `Spring Security` · `Cloudinary`
+
+[live](https://routetripper.com/) · [web](https://github.com/SzymonGos/trip-planner-web) · [api](https://github.com/SzymonGos/trip-planner-api)
+
+### [MIUKI](https://www.miuki.pl/)
+
+Production e-commerce platform I've developed and maintained since 2021, featuring URL-synchronised product filtering, CMS-driven publishing and technical SEO.
+
+`Next.js` · `React` · `TypeScript` · `Tailwind CSS` · `KeystoneJS` · `GraphQL` · `PostgreSQL`
+
+[website](https://www.miuki.pl/)
